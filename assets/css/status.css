@@ -1,0 +1,118 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+}
+
+.status-overview {
+    margin-bottom: 2rem;
+}
+
+.status-card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.status-card i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.status-operational i {
+    color: #28a745;
+}
+
+.status-issues i {
+    color: #ffc107;
+}
+
+.status-down i {
+    color: #dc3545;
+}
+
+.status-details {
+    margin-bottom: 2rem;
+}
+
+.status-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-item {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.status-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.status-icon i {
+    font-size: 1rem;
+}
+
+.status-operational .status-icon i {
+    color: #28a745;
+}
+
+.status-issues .status-icon i {
+    color: #ffc107;
+}
+
+.status-down .status-icon i {
+    color: #dc3545;
+}
+
+.past-incidents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.past-incidents li {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.incident-details p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
