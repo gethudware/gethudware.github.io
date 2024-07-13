@@ -3,82 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hudware Service Status</title>
+    <title>Hudware Status</title>
     <link rel="stylesheet" href="/assets/css/status.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/assets/js/status.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Hudware Service Status</h1>
+        <img src="/assets/images/logo.png" alt="Hudware Logo" class="logo">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/repo">Repo</a>
+            <a href="/cheats">Cheats</a>
+            <a href="/guides">Guides</a>
+            <a href="/status">Status</a>
+        </nav>
     </header>
     <main>
-        <section class="status-overview">
+        <section class="status-summary">
             <h2>Current Status</h2>
-            <div class="status-card status-operational">
-                <i class="fas fa-check-circle"></i>
-                <p>All systems are operational.</p>
+            <div class="status-item operational">
+                <span class="status-icon green"></span>
+                <p>All Systems Operational</p>
             </div>
         </section>
-        <section class="status-details">
-            <h2>Service Details</h2>
-            <div class="status-list">
-                <div class="status-item status-operational">
-                    <i class="fas fa-globe"></i>
-                    <span>Website</span>
-                    <div class="status-icon">
-                        <i class="fas fa-circle"></i>
-                    </div>
+        <section class="services-status">
+            <h2>Services</h2>
+            <div class="service">
+                <div class="service-header">
+                    <span class="status-icon green"></span>
+                    <h3>Main Website</h3>
                 </div>
-                <div class="status-item status-operational">
-                    <i class="fas fa-server"></i>
-                    <span>API</span>
-                    <div class="status-icon">
-                        <i class="fas fa-circle"></i>
-                    </div>
+                <p>Operational</p>
+            </div>
+            <div class="service">
+                <div class="service-header">
+                    <span class="status-icon orange"></span>
+                    <h3>Tweak Repository</h3>
                 </div>
-                <div class="status-item status-operational">
-                    <i class="fas fa-database"></i>
-                    <span>Repository</span>
-                    <div class="status-icon">
-                        <i class="fas fa-circle"></i>
-                    </div>
+                <p>Degraded Performance</p>
+            </div>
+            <div class="service">
+                <div class="service-header">
+                    <span class="status-icon red"></span>
+                    <h3>Game Cheats</h3>
                 </div>
-                <div class="status-item status-operational">
-                    <i class="fas fa-download"></i>
-                    <span>Downloads</span>
-                    <div class="status-icon">
-                        <i class="fas fa-circle"></i>
-                    </div>
+                <p>Major Outage</p>
+            </div>
+            <div class="service">
+                <div class="service-header">
+                    <span class="status-icon green"></span>
+                    <h3>Guides</h3>
                 </div>
+                <p>Operational</p>
             </div>
         </section>
-        <section class="past-incidents">
-            <h2>Past Incidents</h2>
-            <ul>
-                <li>
-                    <h3>July 12, 2024</h3>
-                    <div class="incident-details">
-                        <p><strong>Status:</strong> Resolved</p>
-                        <p><strong>Impact:</strong> API outage</p>
-                        <p><strong>Duration:</strong> 1 hour</p>
-                        <p><strong>Description:</strong> Brief outage affecting the API. Resolved within 1 hour.</p>
-                    </div>
-                </li>
-                <li>
-                    <h3>July 9, 2024</h3>
-                    <div class="incident-details">
-                        <p><strong>Status:</strong> Resolved</p>
-                        <p><strong>Impact:</strong> Website downtime</p>
-                        <p><strong>Duration:</strong> 2 hours</p>
-                        <p><strong>Description:</strong> Website downtime due to maintenance. Resolved within 2 hours.</p>
-                    </div>
-                </li>
-            </ul>
+        <section class="incidents">
+            <h2>Incident History</h2>
+            <div class="incident">
+                <h3>July 12, 2024 - Main Website Outage</h3>
+                <p>Status: Resolved</p>
+                <p>Description: The main website experienced an outage due to server maintenance.</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 hudware. All rights reserved.</p>
+        <p>&copy; 2024 Hudware. All rights reserved.</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/repo">Repo</a>
+            <a href="/cheats">Cheats</a>
+            <a href="/guides">Guides</a>
+            <a href="/status">Status</a>
+        </nav>
     </footer>
-    <script src="/assets/js/status.js"></script>
 </body>
 </html>
