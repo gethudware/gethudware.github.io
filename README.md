@@ -4,7 +4,11 @@ Welcome to the official website repository for hudware. This site serves as a hu
 
 ## About Us
 
-Hudware is dedicated to providing comprehensive guides, innovative tools, and reliable jailbreak solutions. Our mission is to support both new and experienced users in the iOS modding community.
+Hudware is dedicated to creating comprehensive guides, utilities, and applications that empower users to modify their iOS devices safely and effectively. Whether you're a seasoned developer or just starting out, we're here to support your journey into iOS modding.
+
+## Our Mission
+
+Our mission is to provide the most reliable, innovative, and user-friendly tools and guides for iOS modding. We strive to build a strong community where knowledge is shared and innovation thrives.
 
 ## Website Structure
 
@@ -12,6 +16,7 @@ Hudware is dedicated to providing comprehensive guides, innovative tools, and re
 - **Tweaks Repository** (`/repo`): Access and add our Cydia, Sileo, and Zebra repository.
 - **Game Cheats** (`/cheats`): Find or purchase game cheats developed by the hudware team.
 - **Guides** (`/guides`): Detailed tutorials on jailbreak, modding, and development.
+- **Service Status** (`/status`): Monitor the status of our services.
 
 ## Get Started
 
