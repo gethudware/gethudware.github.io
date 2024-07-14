@@ -1,80 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" css-inspector-installed="true" data-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hudware Status</title>
-    <link rel="stylesheet" href="/assets/css/status.css">
-    <script src="/assets/js/status.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>System Status</title>
+    <meta name="next-head-count" content="3">
+    <link rel="preload" href="../assets/css/status/index.css" as="style">
+    <link rel="stylesheet" href="../assets/css/status/index.css" data-n-g="">
 </head>
-<body>
-    <header>
-        <img src="/assets/images/logo.png" alt="Hudware Logo" class="logo">
-        <nav>
-            <a href="/">Home</a>
-            <a href="/repo">Repo</a>
-            <a href="/cheats">Cheats</a>
-            <a href="/guides">Guides</a>
-            <a href="/status">Status</a>
-        </nav>
-    </header>
-    <main>
-        <section class="status-summary">
-            <h2>Current Status</h2>
-            <div class="status-item operational">
-                <span class="status-icon green"></span>
-                <p>All Systems Operational</p>
+
+<body class="dark:bg-gray-800">
+
+    <div id="__next">
+        <div class="h-full w-full ">
+            <div
+                class="mt-20 absolute inset-0 bg-[url(/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
             </div>
-        </section>
-        <section class="services-status">
-            <h2>Services</h2>
-            <div class="service">
-                <div class="service-header">
-                    <span class="status-icon green"></span>
-                    <h3>Main Website</h3>
+            <div class="w-full h-40 absolute bg-light-green dark:green dark:bg-black">
+                <div class="sm:ml-0 ml-5 mr-0 mt-3 md:pl-80 md:pr-80 sm:w-full h-full bg-green-500 dark:bg-black"><span
+                        style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span
+                            style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img
+                                style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0"
+                                alt="" aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%27100%27/%3e"></span><img
+                            alt="Hudware" src="/vercel.svg" decoding="async" data-nimg="intrinsic"
+                            class="w-40 h-16"
+                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"><noscript><img
+                                alt="Tailwind Play" src="/vercel.svg" decoding="async" data-nimg="intrinsic"
+                                style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"
+                                class="w-40 h-16" loading="lazy" /></noscript></span></div>
+            </div>
+            <div class="mt-20 w-full absolute overflow-scroll ">
+                <div class="mt-10">
+                    <div class="mx-px md:ml-80 md:mr-80 bg-white dark:bg-slate-800 rounded-xl card">
+                        <div class="w-full flex justify-between pt-2 pl-6 pr-6 pb-2">
+                            <div class="flex items-center sm:text-xl text-xs font-semibold leading-7"><svg
+                                    class="h-6 w-6 flex-none fill-sky-100 stroke-green-500 stroke-2">
+                                    <circle cx="12" cy="12" r="11"></circle>
+                                    <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none"></path>
+                                </svg>
+                                <p class="ml-3 text-gray-900">All System Operational</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Last updated</p>
+                                <p class="text-xs text-gray-400 text-end ">2024-07-14 12:01</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mx-px mt-10 md:ml-60 md:mr-60">
+                        <div class="card-body">
+                            <ul>
+                                <div class="mb-10">
+                                    <div class="flex"><svg
+                                            class="h-6 w-6 flex-none fill-sky-100 stroke-green-500 stroke-2">
+                                            <circle cx="12" cy="12" r="11"></circle>
+                                            <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none"></path>
+                                        </svg>
+                                        <div class="w-full flex justify-between items-baseline">
+                                            <p class="ml-4 text-base font-semibold leading-6 text-gray-900">Hudwaere</p>
+                                            <p class="text-xs text-gray-400 items-baseline self-baseline"> 100%
+                                                operational in last 90 days</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-10">
+                                    <div class="flex"><svg
+                                            class="h-6 w-6 flex-none fill-sky-100 stroke-green-500 stroke-2">
+                                            <circle cx="12" cy="12" r="11"></circle>
+                                            <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none"></path>
+                                        </svg>
+                                        <div class="w-full flex justify-between items-baseline">
+                                            <p class="ml-4 text-base font-semibold leading-6 text-gray-900">Hudware API</p>
+                                            <p class="text-xs text-gray-400 items-baseline self-baseline"> 100%
+                                                operational in last 90 days</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                        <div class="bg-green-500 ml-0.5 sm:rounded-lg flex-1 h-8"></div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <p class="mt-10 sm:text-lg text-base font-semibold leading-7 text-gray-900">Recent incident</p>
+                        <div class="mt-5">
+                            <div>
+                                <div class="mb-10">
+                                    <p class="mr-5 text-2xl font-semibold leading-6 text-gray-900">August 2022</p>
+                                    <div class="mt-2 flex-1 h-px bg-gray-300"></div>
+                                    <div class="ml-6 border-l-4">
+                                        <div class="flex">
+                                            <div class="-ml-4 mt-6 flex rounded-full w-7 h-7 bg-gray-300"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="14" height="17"
+                                                    viewBox="0 0 14 14" fill="none"
+                                                    class="m-auto fill-gray-500 text-disrupted">
+                                                    <path
+                                                        d="M6.99999 2.3C10.14 2.3 12.7 4.86 12.7 8C12.7 11.14 10.14 13.7 6.99999 13.7C3.85999 13.7 1.29999 11.14 1.29999 8C1.29999 4.86 3.85999 2.3 6.99999 2.3ZM7 1C3.14 1 0 4.14 0 8C0 11.86 3.14 15 7 15C10.86 15 14 11.86 14 8C14 4.14 10.86 1 7 1ZM8 4H6V9H8V4ZM8 10H6V12H8V10Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="items-center ml-3 mt-6">
+                                                <p class="text-base font-semibold leading-6 text-gray-900">Scheduled
+                                                    maintenance</p>
+                                                <div>
+                                                    <p class="text-sm text-gray-500">This incident has been resolved.
+                                                    </p>
+                                                    <p class="text-sm text-gray-500">11 авг., 15:10 - 11 авг., 15:13</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="-ml-4 mt-6 flex rounded-full w-7 h-7 bg-gray-300"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="14" height="17"
+                                                    viewBox="0 0 14 14" fill="none"
+                                                    class="m-auto fill-gray-500 text-disrupted">
+                                                    <path
+                                                        d="M6.99999 2.3C10.14 2.3 12.7 4.86 12.7 8C12.7 11.14 10.14 13.7 6.99999 13.7C3.85999 13.7 1.29999 11.14 1.29999 8C1.29999 4.86 3.85999 2.3 6.99999 2.3ZM7 1C3.14 1 0 4.14 0 8C0 11.86 3.14 15 7 15C10.86 15 14 11.86 14 8C14 4.14 10.86 1 7 1ZM8 4H6V9H8V4ZM8 10H6V12H8V10Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="items-center ml-3 mt-6">
+                                                <p class="text-base font-semibold leading-6 text-gray-900">Hudware is
+                                                    inaccessible at the moment</p>
+                                                <div>
+                                                    <p class="text-sm text-gray-500">This incident has been resolved.
+                                                    </p>
+                                                    <p class="text-sm text-gray-500">10 авг., 13:00 - 10 авг., 13:01</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Operational</p>
             </div>
-            <div class="service">
-                <div class="service-header">
-                    <span class="status-icon orange"></span>
-                    <h3>Tweak Repository</h3>
-                </div>
-                <p>Degraded Performance</p>
-            </div>
-            <div class="service">
-                <div class="service-header">
-                    <span class="status-icon red"></span>
-                    <h3>Game Cheats</h3>
-                </div>
-                <p>Major Outage</p>
-            </div>
-            <div class="service">
-                <div class="service-header">
-                    <span class="status-icon green"></span>
-                    <h3>Guides</h3>
-                </div>
-                <p>Operational</p>
-            </div>
-        </section>
-        <section class="incidents">
-            <h2>Incident History</h2>
-            <div class="incident">
-                <h3>July 12, 2024 - Main Website Outage</h3>
-                <p>Status: Resolved</p>
-                <p>Description: The main website experienced an outage due to server maintenance.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Hudware. All rights reserved.</p>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/repo">Repo</a>
-            <a href="/cheats">Cheats</a>
-            <a href="/guides">Guides</a>
-            <a href="/status">Status</a>
-        </nav>
-    </footer>
+        </div>
+    </div>
 </body>
 </html>

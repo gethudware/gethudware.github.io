@@ -223,7 +223,7 @@ body > panel > fieldset > div iframe {
 }
 
 body > panel > fieldset > div {
-	margin-top:0px
+	margin-top:0px;
 	margin-bottom:8px;
 }
 
@@ -260,10 +260,6 @@ body > panel > fieldset > div > table.information > tbody > tr > td.key {
 ul, ol {
 	padding: 8px 18px;
 }
-
-
-
-
 
 div.header {
 	display:none;
