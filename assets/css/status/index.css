@@ -586,6 +586,10 @@ a {
     align-items: baseline
 }
 
+.items-custom {
+    align-items: unsafe center;
+}
+
 .justify-between {
     justify-content: space-between
 }
